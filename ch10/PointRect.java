@@ -7,6 +7,9 @@ import java.awt.Rectangle;
 public class PointRect {
 
     public static void main(String[] args) {
+
+        Object obj = new Object();
+
         Point blank;
         blank = new Point(3, 4);
 

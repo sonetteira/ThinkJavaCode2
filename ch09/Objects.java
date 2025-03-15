@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Demonstrates uses of objects and wrappers.
  */
@@ -25,12 +27,17 @@ public class Objects {
         // Strings are immutable
 
         String name = "Alan Turing";
+        // Scanner s = new Scanner(System.in);
+        // System.out.print("Enter a name: ");
+        // String secondName = s.nextLine();
+        String secondName = name;
+        System.out.println(name.equals(secondName));
         String upperName = name.toUpperCase();
 
         name.toUpperCase();           // ignores the return value
-        System.out.println(name);
+        // System.out.println(name);
         name = name.toUpperCase();    // references the new string
-        System.out.println(name);
+        // System.out.println(name);
 
         String text = "Computer Science is fun!";
         text = text.replace("Computer Science", "CS");
@@ -38,15 +45,15 @@ public class Objects {
         // Wrapper classes
 
         Integer i = Integer.valueOf(5);
-        System.out.println(i.equals(5));  // displays true
+        // System.out.println(i.equals(5));  // displays true
 
         Integer x = Integer.valueOf(123);
         Integer y = Integer.valueOf(123);
         if (x == y) {                     // false
-            System.out.println("x and y are the same object");
+            // System.out.println("x and y are the same object");
         }
         if (x.equals(y)) {                // true
-            System.out.println("x and y have the same value");
+            // System.out.println("x and y have the same value");
         }
 
         String str = "12345";

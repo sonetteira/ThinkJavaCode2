@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * Starter code for the "Guess My Number" exercise.
@@ -10,6 +11,7 @@ public class GuessStarter {
         Random random = new Random();
         int number = random.nextInt(100) + 1;
         System.out.println(number);
+        Scanner in;
     }
 
 }

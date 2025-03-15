@@ -9,11 +9,12 @@ public class ArrayExamples {
      * Example code from Chapter 7.
      */
     public static void main(String[] args) {
-        int size = 10;
-        int[] counts = new int[4];
-        double[] values = new double[size];
 
+        
+        int[] counts = new int[4];
         counts[0] = 7;
+
+
         counts[1] = counts[0] * 2;
         counts[2]++;
         counts[3] -= 60;
@@ -35,7 +36,7 @@ public class ArrayExamples {
         printArray(array);
 
         // printing an array as an object
-        System.out.println(array);
+        // System.out.println(array);
 
         // printing with Arrays class
         System.out.println(Arrays.toString(array));
@@ -62,6 +63,10 @@ public class ArrayExamples {
         // reduce
         double total = sum(a);
         System.out.println("total = " + total);
+
+        // print an empty string array
+        String[] strArray = new String[2];
+        System.out.println(Arrays.toString((strArray)));
     }
 
     /**
@@ -69,9 +74,12 @@ public class ArrayExamples {
      */
     public static void printArray(int[] a) {
         System.out.print("{" + a[0]);
+
         for (int i = 1; i < a.length; i++) {
-            System.out.print(", " + a[i]);
+            int element = a[i];
+            System.out.println(element);
         }
+
         System.out.println("}");
     }
 
