@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
 
 public class HashMapExamples {
     public static void main(String[] args) {
@@ -47,9 +49,20 @@ public class HashMapExamples {
         prices.put("water bottle", 3.99);
         prices.put("corn muffin", 2.69);
 
-        for(String product : prices.keySet()) {
-            System.out.println(product + ": $" + prices.get(product));
-        }
+        HashSet<String> names = new HashSet<>();
+        names.add("Jewel");
+        names.add("Willow");
+        names.add("Daniella");
+        names.add("Mistery");
+        names.add("Danika");
+
+        Hashtable<String, String> schedule = new Hashtable<>();
+        schedule.put("Monday 9:00", "Math");
+        schedule.put("Monday 10:00", "Science");
+        schedule.put("Tuesday 9:30", "History");
+
+        "Monday 9:00".hashCode();
+        
     }
 }
     

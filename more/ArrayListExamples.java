@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class ArrayListExamples {
     public static void main(String[] args) {
@@ -45,6 +46,12 @@ public class ArrayListExamples {
         trees.add("walnut");
 
         System.out.println(trees.get(0));
+
+        ArrayList<Integer> numbers = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+
+        System.out.println(number);
+
+        numbers.add(6);
 
     }
 }
