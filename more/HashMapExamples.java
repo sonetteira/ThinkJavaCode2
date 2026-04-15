@@ -4,16 +4,16 @@ import java.util.Hashtable;
 
 public class HashMapExamples {
     public static void main(String[] args) {
-        // HashMap<String, String> contactsList = new HashMap<String, String>();
+        HashMap<String, String> contactsList = new HashMap<String, String>();
 
-        // contactsList.put("Work", "800-874-PACE");
-        // contactsList.put("Ed Media", "914-773-3338");
-        // contactsList.put("NOT Ed Media", "914-773-3388");
+        contactsList.put("Work", "800-874-PACE");
+        contactsList.put("Ed Media", "914-773-3338");
+        contactsList.put("NOT Ed Media", "914-773-3388");
 
         // contactsList.put("Work", "test");
 
-        // System.out.println(contactsList); 
-        // // {NOT Ed Media=914-773-3388, Ed Media=914-773-3338, Work=test}
+        System.out.println(contactsList); 
+        // {NOT Ed Media=914-773-3388, Ed Media=914-773-3338, Work=test}
 
         // contactsList.get("NOT Ed Media");
         // contactsList.remove("Work");

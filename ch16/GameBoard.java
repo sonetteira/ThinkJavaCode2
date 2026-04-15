@@ -4,7 +4,7 @@ public class GameBoard {
         // build a new game board of size x * y
         board = new BoardTile[x][y];
     }
-    class BoardTile {
+    private class BoardTile {
         String color;
         int value;
 
@@ -26,7 +26,7 @@ class Test{
         GameBoard gb = new GameBoard(5, 5);
         
         // separate movable tile
-        GameBoard.BoardTile tile = gb.new BoardTile("red", 5);
+        // GameBoard.BoardTile tile = gb.new BoardTile("red", 5);
     }
 }
 

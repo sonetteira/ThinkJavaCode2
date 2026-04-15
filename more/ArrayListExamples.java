@@ -45,11 +45,17 @@ public class ArrayListExamples {
         trees.add("maple");
         trees.add("walnut");
 
+        System.out.println("Unsorted trees: " + trees);
+
+        Collections.sort(trees);
+
+        System.out.println("Sorted trees: " + trees);
+
         System.out.println(trees.get(0));
 
         ArrayList<Integer> numbers = new ArrayList<>(List.of(1, 2, 3, 4, 5));
 
-        System.out.println(number);
+        System.out.println(numbers);
 
         numbers.add(6);
 

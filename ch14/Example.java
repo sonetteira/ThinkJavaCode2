@@ -49,10 +49,13 @@ class Maple extends Tree {
 public class Example {
     
     public static void main(String[] args) {
+        Tree cherryBlossom = new Tree(40.1, 50.3, "cherry", 20);
+        System.out.println(cherryBlossom.getDiameter());
         Tree aTree = new Maple(40.1, 50.6, 30);
 
+        System.out.println(aTree.getClass());
+
         Object anythingAtAll;
-        
     }
 }
 

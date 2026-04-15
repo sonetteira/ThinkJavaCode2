@@ -39,6 +39,7 @@ class HourlyEmployee extends Employee {
         this.weeklyHours = hours;
     }
 
+    @Override
     public double calculatePaycheck() {
         // calculate a bi-weekly paycheck based on hourly payrate multiplied by hours worked
         return payRate * weeklyHours * 2;
@@ -50,6 +51,7 @@ class SalariedEmployee extends Employee {
         super(name, title);
     }
 
+    @Override
     public double calculatePaycheck() {
         // calculate a bi-weekly paycheck based on yearly payrate
         return payRate / 24; // 12 months per year * 2 biweekly events per month
